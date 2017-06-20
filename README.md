@@ -58,13 +58,13 @@ response: 18
 
 ### Requirements
 
-- [ ] __10:__ All files are stored under the `part-1/` folder
-- [ ] __10:__ All dependencies are specified in a `package.json` file
-- [ ] __10:__ Web server can be started with `npm start` command
-- [ ] __20:__ GET requests to the `/zero` route respond with plain text `0`
-- [ ] __20:__ GET requests to the `/add` route add the two numbers provided in the query string variables `a` and `b` and respond with the result
-- [ ] __20:__ GET requests to the `/subtract` route subtract the value of the query string variable `b` from the query string variable `a` and respond with the result
-- [ ] __20:__ GET requests to the `/double/:number` route doubles the number provided in the URL (in place of `:number`) and responds with the result
+- [x] __10:__ All files are stored under the `part-1/` folder
+- [x] __10:__ All dependencies are specified in a `package.json` file
+- [x] __10:__ Web server can be started with `npm start` command
+- [x] __20:__ GET requests to the `/zero` route respond with plain text `0`
+- [x] __20:__ GET requests to the `/add` route add the two numbers provided in the query string variables `a` and `b` and respond with the result
+- [x] __20:__ GET requests to the `/subtract` route subtract the value of the query string variable `b` from the query string variable `a` and respond with the result
+- [x] __20:__ GET requests to the `/double/:number` route doubles the number provided in the URL (in place of `:number`) and responds with the result
 
 ## Part 2: Database for grocery store & tests
 
@@ -80,9 +80,9 @@ Then, use [pg-promise](https://www.npmjs.com/package/pg-promise) and [Mocha](htt
 
 ### Requirements
 
-- [ ] __10:__ All files are stored under the `part-2/` folder
-- [ ] __10:__ Database schema (all `CREATE TABLE` statements) is defined in a file `schema.sql`
-- [ ] __10:__ SQL script to insert [grocery seed data][grocery-data] and load from CSV is created in a file `load-data.sql`
+- [x] __10:__ All files are stored under the `part-2/` folder
+- [x] __10:__ Database schema (all `CREATE TABLE` statements) is defined in a file `schema.sql`
+- [x] __10:__ SQL script to insert [grocery seed data][grocery-data] and load from CSV is created in a file `load-data.sql`
 - [ ] __10:__ All database query functions are written in a file `database.js`, and tests for queries are written in a file `database_test.js`
 
 Implement these functions in `database.js` using [pg-promise](https://www.npmjs.com/package/pg-promise) to make the following queries:
@@ -117,7 +117,7 @@ Clicking on the "Cart" button opens the cart modal.
 
 ### Requirements
 
-- [ ] __10:__ All files are stored under the `part-3/` folder
+- [x] __10:__ All files are stored under the `part-3/` folder
 - [ ] __20:__ No third party CSS or JS libraries are used (all code must be written from scratch)
 - [ ] __10:__ HTML, CSS, and JS are separated into their own files.
 - [ ] __20:__ Clicking on "Add to cart" will update the number displayed next to the "Cart" button to show the total number of items in the user's cart
