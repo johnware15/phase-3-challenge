@@ -22,3 +22,18 @@ const countItemsInSection = database.query('SELECT name, COUNT(*) FROM grocery G
 countItemsInSection.then(grocery => {
 console.log(countItemsInSection);
 });
+
+const mostRecentOrders = database.query('SELECT id, order_date FROM grocery ORDER BY date')
+mostRecentOrders.then(grocery => {
+console.log(mostRecentOrders);
+});
+
+const lastShopperName = database.query('SELECT shopper_name FROM grocery ORDER BY date AND GROUP BY shopper_name')
+lastShopperName.then(grocery => {
+console.log(lastShopperName);
+});
+
+const orderTotal = database.query('SELECT price, SUM(*) FROM grocery GROUP BY order ORDER BY id')
+orderTotal.then(grocery => {
+console.log(orderTotal);
+})
