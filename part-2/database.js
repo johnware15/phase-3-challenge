@@ -36,4 +36,4 @@ console.log(lastShopperName);
 const orderTotal = database.query('SELECT price, SUM(*) FROM grocery GROUP BY order ORDER BY id')
 orderTotal.then(grocery => {
 console.log(orderTotal);
-})
+});
