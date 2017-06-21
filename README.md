@@ -21,7 +21,7 @@ Each requirement has a point value. A fully complete requirement gets full point
 
 - [x] __10:__ Solution is in a public repository called `phase-3-challenge`
 - [x] __10:__ Solution repository has 3 folders: `part-1`, `part-2`, and `part-3`.
-- [ ] __20:__ Git history shows frequent commits.
+- [x] __20:__ Git history shows frequent commits.
 
 ## Part 1: Simple web app
 
@@ -97,9 +97,9 @@ Implement these functions in `database.js` using [pg-promise](https://www.npmjs.
 
 Write tests with [Mocha](https://mochajs.org/) + [Chai](http://chaijs.com/) in `database_test.js` that assert:
 
-- [ ] __20:__ A call to `itemsInSection("bulk")` returns the items `"Flour"`, `"Pasta"`, and `"Rice"`
-- [ ] __20:__ A call to `cheapItems()` returns the item `"Fish"` as the first item and `"Honey"` as the last item
-- [ ] __20:__ A call to `countItemsInSection("packaged")` returns `5`
+- [x] __20:__ A call to `itemsInSection("bulk")` returns the items `"Flour"`, `"Pasta"`, and `"Rice"`
+- [x] __20:__ A call to `cheapItems()` returns the item `"Fish"` as the first item and `"Honey"` as the last item
+- [x] __20:__ A call to `countItemsInSection("packaged")` returns `5`
 
 ## Part 3: Web interface for grocery store
 
@@ -120,10 +120,10 @@ Clicking on the "Cart" button opens the cart modal.
 - [x] __10:__ All files are stored under the `part-3/` folder
 - [x] __20:__ No third party CSS or JS libraries are used (all code must be written from scratch)
 - [x] __10:__ HTML, CSS, and JS are separated into their own files.
-- [ ] __20:__ Clicking on "Add to cart" will update the number displayed next to the "Cart" button to show the total number of items in the user's cart
-- [ ] __20:__ Clicking on the "Cart" button will show the cart modal with a list of all items added
-- [ ] __20:__ Clicking on the "Clear" button in the cart modal removes all items from the cart
-- [ ] __20:__ Clicking on the "X" button in the cart modal closes the modal
+- [x] __20:__ Clicking on "Add to cart" will update the number displayed next to the "Cart" button to show the total number of items in the user's cart
+- [x] __20:__ Clicking on the "Cart" button will show the cart modal with a list of all items added
+- [x] __20:__ Clicking on the "Clear" button in the cart modal removes all items from the cart
+- [x] __20:__ Clicking on the "X" button in the cart modal closes the modal
 - [ ] __20:__ The "Total" in the cart modal shows the calculated sum of all item prices
 
 [grocery-data]: https://gist.github.com/lg-bot/1be9e9b91fc0f972b74b72df34c99d3d#file-grocery-csv

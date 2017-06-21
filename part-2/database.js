@@ -1,4 +1,5 @@
 export default class Database
+import load-data from 'load-data'
 
 const allItems = database.any('SELECT * FROM grocery')
 allItems.then(grocery => {
@@ -23,17 +24,17 @@ countItemsInSection.then(grocery => {
 console.log(countItemsInSection);
 });
 
-const mostRecentOrders = database.query('SELECT id, order_date FROM grocery ORDER BY date')
+const mostRecentOrders = database.query('SELECT id, order_date FROM grocery_store ORDER BY order_date')
 mostRecentOrders.then(grocery => {
 console.log(mostRecentOrders);
 });
 
-const lastShopperName = database.query('SELECT shopper_name FROM grocery ORDER BY date AND GROUP BY shopper_name')
+const lastShopperName = database.query('SELECT shopper_lastname FROM grocery ORDER BY order_date AND GROUP BY shopper_name')
 lastShopperName.then(grocery => {
 console.log(lastShopperName);
 });
 
-const orderTotal = database.query('SELECT price, SUM(*) FROM grocery GROUP BY order ORDER BY id')
+const orderTotal = database.query('SELECT price, SUM(*) FROM grocery GROUP BY id_order ORDER BY id')
 orderTotal.then(grocery => {
 console.log(orderTotal);
 });
