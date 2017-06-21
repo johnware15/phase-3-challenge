@@ -25,7 +25,7 @@ app.get('/subtract', function(req, res){
   res.send(subtract);
   return subtract;
 });
-} else if(readlineSync.keyInYN('Do one more of the same item? ')) {
+} else if(readlineSync.keyInYN('Do you want one more of the same item? ')) {
 app.get('/double', function(req, res){
   res.send(double);
   return double;
